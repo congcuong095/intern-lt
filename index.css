@@ -1,3 +1,177 @@
-body {
+:root {
+
+    --primary-color: #20212F;
     font-family: 'Proxima Nova', Georgia, sans-serif;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* --------------------Header----------------- */
+.header {
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 16px 0;
+    height: 36px;
+}
+
+.nav-home {
+    flex-grow: 1;
+}
+
+.nav-home__link {
+    color: var(--primary-color);
+    padding: 2px 3px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.nav-page-item {
+    padding: 0 1px;
+    height: 15px;
+}
+
+.nav-page-item+.nav-page-item {
+    margin-left: 17px;
+}
+
+.nav-page-item__link {
+    display: flex;
+    align-items: flex-end;
+    color: var(--primary-color);
+    font-weight: 600;
+    /* Change font 12px to 14px */
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-btn-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-btn-item a {
+    display: block;
+}
+
+.nav-btn-item+.nav-btn-item {
+    margin-left: 22px;
+}
+
+.nav-btn__icon-search {
+    width: 16px;
+    height: 16px;
+    margin: 9px 0px 11px;
+}
+
+.nav-btn__icon-search i {
+    font-size: 16px;
+    color: #20212F;
+}
+
+.nav-btn__icon-noti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #FF3333;
+    width: 36px;
+    height: 36px;
+}
+
+.nav-btn__icon-noti i {
+
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/* --------------------Main--------------- */
+.main {
+    position: relative;
+    height: 100vh;
+}
+
+/* --------------------------------Slide---------------------- */
+.slide {
+    position: relative;
+    height: 750px;
+    background-image: url("/asset/img/slide.png")
+}
+
+.slide-content {
+    position: absolute;
+    top: 325px;
+    left: 130px;
+
+}
+
+.slide-lead-story {
+    align-self: flex-start;
+}
+
+.slide-lead-story__order {
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.slide-lead-story__title {}
+
+.slide-lead-story__btn {}
+
+.slide-second-story {
+    margin-top: 76px;
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-second-story-item {}
+
+.slide-second-story__order {}
+
+.slide-second-story__title {}
