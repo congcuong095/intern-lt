@@ -84,8 +84,44 @@
         font-size: 6px;
     }
 
-    .nav-main {
+    .nav-page {
         display: none;
+    }
+
+    .nav-page {
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+        z-index: 998;
+    }
+
+    .nav-page-item {
+        width: 100%;
+        padding: 4rem 4rem;
+        height: auto;
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+    }
+
+    .nav-page-item+.nav-page-item {
+        margin: 0;
+    }
+
+    .nav-page-item a {
+        font-size: 2rem;
+
+    }
+
+    .nav-btn {
+        margin-right: 40px;
     }
 
     .nav-mobile {
@@ -94,6 +130,36 @@
 
     .nav-mobile i {
         font-size: 3.6rem;
+    }
+
+    .nav-mobile {
+        position: absolute;
+        top: 0.2rem;
+        right: 1.6rem;
+    }
+
+    .nav-mobile-close {
+        position: absolute;
+        top: 0.2rem;
+        right: 1.6rem;
+        z-index: 999;
+    }
+
+    .nav-mobile-close i {
+        font-size: 3.6rem;
+    }
+
+    .checkbox-menu:checked~.nav-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .checkbox-menu:checked~.nav-mobile-close {
+        display: block;
+    }
+
+    .checkbox-menu:checked~.nav-mobile {
+        display: none;
     }
 
     .slide {
@@ -117,10 +183,12 @@
         min-width: 12rem;
         min-height: 12em;
     }
-    .footer{
+
+    .footer {
         justify-content: center;
     }
-    .footer-home{
+
+    .footer-home {
         display: none;
     }
 }

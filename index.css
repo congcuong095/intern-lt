@@ -34,11 +34,20 @@ li {
     width: 100%;
     z-index: 999;
 }
-.nav-mobile {
+
+.nav-mobile,
+.nav-mobile-close {
+    display: none;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.checkbox-menu {
     display: none;
 }
 
 .nav {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -56,6 +65,10 @@ li {
     padding: 0.2rem 0.3rem;
     font-size: 2.6rem;
     font-weight: 700;
+}
+
+.nav-home__link:hover {
+    color: #db6e6ead;
 }
 
 .nav-main {
@@ -92,6 +105,10 @@ li {
     text-transform: uppercase;
 }
 
+.nav-page-item__link:hover {
+    color: #db6e6ead;
+}
+
 .nav-btn {
     display: flex;
     flex-direction: row;
@@ -123,6 +140,10 @@ li {
     color: #20212F;
 }
 
+.nav-btn__icon-search i:hover {
+    scale: 1.1;
+}
+
 .nav-btn__icon-noti {
     display: flex;
     justify-content: center;
@@ -131,6 +152,10 @@ li {
     background-color: #FF3333;
     width: 3.6rem;
     height: 3.6rem;
+}
+
+.nav-btn__icon-noti:hover {
+    scale: 1.1;
 }
 
 .nav-btn__icon-noti i {
@@ -193,6 +218,9 @@ li {
     cursor: pointer;
 }
 
+.slide-lead-story__title:hover {
+    text-decoration: underline;
+}
 
 .slide-lead-story__btn {
     display: flex;
@@ -207,6 +235,10 @@ li {
     border: none;
     border-bottom: 1px solid #FFFFFF;
     cursor: pointer;
+}
+
+.slide-lead-story__btn:hover {
+    color: #db6e6ead;
 }
 
 .slide-second-story {
@@ -254,6 +286,10 @@ li {
     font-weight: 600;
     letter-spacing: 0.1rem;
     cursor: pointer;
+}
+
+.slide-second-story__title:hover {
+    text-decoration: underline;
 }
 
 /* ---------------------------------------Trending----------------------------------- */
@@ -528,7 +564,6 @@ li {
     background-image: url("./asset/img/action-background.png");
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     width: 100%;
 }
 
@@ -635,6 +670,13 @@ li {
     min-height: 16em;
     margin-top: 4rem;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+
+}
+
+.action-category__option-item:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
 }
 
 .action-category__option-item:not(:nth-child(3n)) {
@@ -690,6 +732,10 @@ li {
     cursor: pointer;
 }
 
+.footer-home:hover {
+    color: #db6e6ead;
+}
+
 .footer-nav {
     display: flex;
     justify-content: space-between;
@@ -703,6 +749,10 @@ li {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.footer-nav__item:hover {
+    color: #db6e6ead;
 }
 
 .footer-nav__item+.footer-nav__item {
